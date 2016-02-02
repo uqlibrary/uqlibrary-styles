@@ -28,7 +28,7 @@ git checkout --orphan gh-pages
 
 # remove all non-relevant content
 git rm -rf .gitignore
-git rm -rf gulpfile.js
+#git rm -rf gulpfile.js
 
 git rm -rf bin
 
