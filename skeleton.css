@@ -4,6 +4,7 @@ body {
 
 uq-minimal-header {
   height: 100px;
+  display: block;
   background-color: #49075E;
   width: 100%; }
 
