@@ -74,6 +74,20 @@
       background-color: var(--unavailable-color);
     }
 
+    div.alert-urgent {
+      padding: 10px;
+      color: var(--alert-text-color);
+      background-color: var(--alert-background-color);
+      border: 1px solid var(--alert-border-color);
+    }
+
+    div.alert-notice {
+      padding: 10px;
+
+      color: var(--notice-text-color);
+      background-color: var(--notice-background-color);
+      border: 1px solid var(--notice-border-color);
+    }
 
   </style>
 
@@ -100,6 +114,16 @@
     <div class="border-color">var(--border-color)</div>
     <div class="available-color">var(--available-color)</div>
     <div class="unavailable-color">var(--unavailable-color)</div>
+
+    <h3>Alerts</h3>
+    <div class="alert-urgent">
+      <strong>Alert!</strong>this is an alert <a href="#">Read more details</a>
+    </div>
+
+    <div class="alert-notice">
+      <strong>Notice!</strong>this is a notice <a href="#">Read more details</a>
+    </div>
+
   </template>
 
   <script>
