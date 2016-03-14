@@ -343,6 +343,21 @@
         display: block;
       }
 
+      paper-toolbar.bottom-fixed {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFF;
+        border-top: 1px solid var(--border-color);
+
+        --paper-toolbar-height: 50px;
+      }
+
+      paper-toolbar.bottom-fixed.right {
+        @apply(--layout-horizontal-reverse);
+      }
+
       @media all and (max-width: 700px) {
         .icon-button-title {
           display: none;
