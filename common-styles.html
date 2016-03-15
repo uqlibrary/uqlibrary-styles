@@ -343,19 +343,25 @@
         display: block;
       }
 
-      paper-toolbar.bottom-fixed {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #FFF;
-        border-top: 1px solid var(--border-color);
-
-        --paper-toolbar-height: 50px;
+      .uqlibrary-app-content {
+        padding: 20px;
       }
 
-      paper-toolbar.bottom-fixed.right {
+      .uqlibrary-app-footer {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        background-color: var(--secondary-color-light);
+        border-top: 1px solid var(--border-color);
+        color: #000;
+      }
+
+      .uqlibrary-app-footer.right {
         @apply(--layout-horizontal-reverse);
+      }
+
+      paper-toolbar .app-title {
+        color: #FFF;
       }
 
       @media all and (max-width: 700px) {
