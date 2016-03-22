@@ -3,6 +3,7 @@
 <link rel="import" href="style-guide-typo.html">
 <link rel="import" href="style-guide-colors.html">
 <link rel="import" href="style-guide-forms.html">
+<link rel="import" href="style-preload.html">
 
 <!--
 `<style-guide>` is an implementation of UQL style guide
@@ -43,6 +44,7 @@ Example:
         <div>
           <paper-menu selected="{{selected}}">
             <paper-item>About</paper-item>
+            <paper-item>Preloading</paper-item>
             <paper-item>Colours</paper-item>
             <paper-item>Typography</paper-item>
             <paper-item>Buttons</paper-item>
@@ -73,6 +75,20 @@ Example:
               implemented with Polymer web components
               </div>
             </paper-card>
+
+            <div id="preloading">
+              <paper-card heading="Preloading/Browser detection">
+                <div class="card-content">
+                  This is a sample of loading card and unsupported browser message to be displayed before Polymer/Webcomponents is loaded. <br><br>
+                  - Copy everything inside <strong>&lt;div id="preloader"&gt; ... &lt;/div&gt; </strong> to your project. <br>
+                  - Update path to loader image <br>
+                  - Browser detection is done by <strong>uqlibrary/uqlibrary-browser-supported</strong>.
+                </div>
+              </paper-card>
+
+              <style-preload></style-preload>
+
+            </div>
 
             <paper-card id="colors" heading="Colors">
               <div class="card-content">
