@@ -366,6 +366,23 @@
         color: #FFF;
       }
 
+      .skip-navigation {
+        position: absolute;
+        z-index: 99999999999;
+        left: -200px;
+        top: -200px;
+        width: 200px;
+
+        margin: 5px;
+        background-color: #000;
+        color: #FFF;
+      }
+
+      .skip-navigation:focus {
+        outline: #288BED auto 5px;
+        outline-offset: -4px;
+      }
+
       @media all and (max-width: 700px) {
         .icon-button-title {
           display: none;
