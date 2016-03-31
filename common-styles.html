@@ -353,7 +353,7 @@
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
         box-sizing: content-box;
-        background-color: var(--secondary-color-light);
+        background-color: #FFF;
         border-top: 1px solid var(--border-color);
         color: #000;
       }
@@ -364,6 +364,23 @@
 
       paper-toolbar .app-title {
         color: #FFF;
+      }
+
+      .skip-navigation {
+        position: absolute;
+        z-index: 99999999999;
+        left: -200px;
+        top: -200px;
+        width: 200px;
+
+        margin: 5px;
+        background-color: #000;
+        color: #FFF;
+      }
+
+      .skip-navigation:focus {
+        outline: #288BED auto 5px;
+        outline-offset: -4px;
       }
 
       @media all and (max-width: 700px) {
