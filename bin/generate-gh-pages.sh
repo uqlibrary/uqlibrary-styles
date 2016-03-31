@@ -1,47 +1,43 @@
 #!/bin/bash -e
+
+# Creates and updates the "gh-pages" branch of the current repository
 #
-# @license
-# Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-# This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-# The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-# The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-# Code distributed by Google as part of the polymer project is also
-# subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-#
+# Usage: ./generate-sh-pages.sh <branch>
+# Example: ./generate-sh-pages.sh master
 
-# This script pushes a demo-friendly version of uqlibrary-reusable-components and its
-# dependencies to gh-pages.
+# Get repo from DIR name
+cd `dirname "${BASH_SOURCE[0]}"`;
+REPO="$(basename `git rev-parse --show-toplevel`)";
 
-# Run in a clean directory passing in a GitHub org and repo name
-org="uqlibrary"
-repo="uqlibrary-styles"
+ORG="uqlibrary";
 
-branch=${3:-"master"} # default to master when branch isn't specified
+# Get branch
+BRANCH=${1:-"master"}
 
-# make folder (same as input, no checking!)
-mkdir $repo
-git clone git@github.com:$org/$repo.git --single-branch
+# Make temporary dir and GIT clone
+rm -rf "../tmp/$REPO";
+mkdir -p "../tmp/$REPO";
+cd "../tmp";
+git clone -b $BRANCH https://github.com/$ORG/$REPO.git --single-branch
 
-# switch to gh-pages branch
-pushd $repo >/dev/null
+# Switch to gh-pages branch
+cd $REPO >/dev/null
 git checkout --orphan gh-pages
 
-# remove all non-relevant content
+# Remove all non-relevant content
 git rm -rf .gitignore
-#git rm -rf gulpfile.js
-
 git rm -rf bin
+git rm -rf test
 
-# use bower to install runtime deployment
-bower cache clean $repo # ensure we're getting the latest from the desired branch.
+# Bower install
+bower cache clean $REPO # ensure we're getting the latest from the desired branch.
 bower install
 
-# redirect by default to the elements folder
-echo "<META http-equiv="refresh" content=\"0;URL=style-guide/demo\">" >index.html
-
-# send it all to github
+# Send it all to github
 git add -A .
 git commit -am 'seed gh-pages'
 git push -u origin gh-pages --force
 
-popd >/dev/null
+cd "../..";
+echo `pwd`;
+rm -rf tmp;
