@@ -306,6 +306,19 @@
         outline: var(--focus-outline-color) auto 5px;
         font-weight: 400;
       }
+      
+      paper-button.button-colored-secondary,
+      paper-button.button-secondary,
+      paper-button.button-accent,
+      paper-button.button-colored-accent,
+      paper-button.button-theme,
+      paper-button.button-colored-theme {
+        @apply(--layout-vertical);
+      }
+
+      paper-button {
+        text-align: center;
+      }
 
       paper-item.header {
           display: block;
