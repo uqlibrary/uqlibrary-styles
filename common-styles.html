@@ -390,6 +390,32 @@
         font-size: 1.2em;
       }
 
+      paper-item .linked-item {
+        color: var(--accent-color);
+      }
+
+      @media all and (max-width: 320px) {
+        paper-item.compact {
+          font-size: 0.75em;
+        }
+      }
+      @media all and (max-width: 400px) {
+        paper-item.compact {
+          font-size: 0.9em;
+        }
+      }
+
+      @media all and (max-width: 260px) {
+        paper-item.compact.detail-item {
+          @apply(--layout-vertical);
+          min-height: 50px;
+          line-height: 1em;
+          margin: 6px 0;
+        }
+      }
+      /* end compact styles */
+
+
       @media all and (max-width: 700px) {
         .icon-button-title {
           display: none;
