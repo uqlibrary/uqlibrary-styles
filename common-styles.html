@@ -382,16 +382,24 @@
         outline-offset: -4px;
       }
 
-      /* compact styles for hours, computers, training */
-      paper-item.compact {
-        font-size: 1em;
-      }
-      paper-item.compact.header {
-        font-size: 1.2em;
+      /* styling for hours, computers, training */
+      paper-item .linked-item {
+        @apply(--layout-flex-2);
+        color: var(--accent-color);
+        cursor: pointer;
       }
 
-      paper-item .linked-item {
-        color: var(--accent-color);
+      /* compact styles for hours, computers, training */
+      paper-item.compact {
+        cursor: pointer;
+        border-bottom: 1px solid var(--border-color);
+        font-size: 1em;
+        min-height: 30px;
+        padding: 0 8px;
+      }
+
+      paper-item.compact.header {
+        font-size: 1.2em;
       }
 
       @media all and (max-width: 320px) {
