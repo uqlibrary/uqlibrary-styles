@@ -4,6 +4,8 @@
 <link rel="import" href="style-guide-colors.html">
 <link rel="import" href="style-guide-forms.html">
 <link rel="import" href="style-preload.html">
+<link rel="import" href="style-guide-custom-icons.html">
+
 
 <!--
 `<style-guide>` is an implementation of UQL style guide
@@ -33,6 +35,7 @@ Example:
       margin: 16px 0;
     }
 
+
   </style>
 
   <template>
@@ -50,6 +53,7 @@ Example:
             <paper-item>Buttons</paper-item>
             <paper-item>Forms</paper-item>
             <paper-item>Components</paper-item>
+            <paper-item>Icons</paper-item>
             <!--<li><a href="#sllist">Single line list</a></li>-->
             <!--<li><a href="#twollist">Two-line list</a></li>-->
             <!--<li><a href="#threellist">Three-line list</a></li>-->
@@ -118,6 +122,14 @@ Example:
               <div class="card-content">
                 <a href="http://uqlibrary.github.io/uqlibrary-reusable-components/elements/">Reusable components documentation and demo page</a>
               </div>
+            </paper-card>
+
+
+            <paper-card id="custom-icons" heading="Custom icons">
+            <div class="card-content">
+              <p style="margin-top: 0px;">A set of custom assigned SVG icons (uqlibrary-styles/uqlibrary-icons.html) have been designed for use in UQ Library pages.</p>
+              <style-guide-custom-icons></style-guide-custom-icons>
+            </div>
             </paper-card>
 
           </iron-pages>
