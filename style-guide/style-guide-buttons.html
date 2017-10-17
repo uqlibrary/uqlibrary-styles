@@ -12,21 +12,21 @@ Example:
 
 <dom-module id="style-guide-buttons">
 
-    <style is="custom-style" include="common-styles">
-        :host {
-            font-family: var(--font-family);
-            --style-guide-container: {
-                padding: 10px;
-            }
-        }
-
-        div {
-            @apply(--style-guide-container);
-        }
-
-    </style>
-
     <template>
+        <style is="custom-style" include="common-styles">
+            :host {
+                font-family: var(--font-family);
+                --style-guide-container: {
+                    padding: 10px;
+                }
+            }
+
+            div {
+                @apply(--style-guide-container);
+            }
+
+        </style>
+
         <div>
             <paper-button class="button-colored-theme">Theme Button</paper-button>
             <paper-button class="button-colored-accent">Accent Button</paper-button>

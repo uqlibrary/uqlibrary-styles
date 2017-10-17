@@ -18,27 +18,27 @@ Example:
 
 <dom-module id="style-guide">
 
-  <style is="custom-style" include="common-styles">
-
-    :host {
-      font-family: var(--font-family);
-    }
-
-    #content {
-      width: 90%;
-      margin: auto;
-    }
-
-    paper-card,
-    iframe {
-      width: 100%;
-      margin: 16px 0;
-    }
-
-
-  </style>
-
   <template>
+
+    <style is="custom-style" include="common-styles">
+
+      :host {
+        font-family: var(--font-family);
+      }
+
+      #content {
+        width: 90%;
+        margin: auto;
+      }
+
+      paper-card,
+      iframe {
+        width: 100%;
+        margin: 16px 0;
+      }
+
+
+    </style>
 
     <paper-drawer-panel>
       <paper-header-panel drawer>
