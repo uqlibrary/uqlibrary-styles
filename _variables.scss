@@ -1,24 +1,24 @@
 //theme colours
-$theme-color: #49075E;
-$theme-color-dark: #370546;
-$theme-color-lighter: #6B0C8A;
-$theme-color-light: #d2c1d7;
+$theme-color: #51247A; // UQ purple
+$theme-color-dark: #1E0047; // UQ purple at 20%
+$theme-color-lighter: #8457AD; // UQ purple at 20%
+$theme-color-light: #d4c8de; // per OMC website
 
-$accent-color: #2377CB;
-$accent-color-light: #288BED;
-$accent-color-lighter: #D9EEFF;
-$accent-color-dark: #005EA5;
+$accent-color: #4085C6; // secondary blue
+$accent-color-light: #73B8F9; // secondary blue at 20%
+$accent-color-lighter: #A6EBFF; // secondary blue at 40%
+$accent-color-dark: #0D5293; // secondary blue at 20%
 
-$secondary-color: #595959;
-$secondary-color-light: #f2f2f2;
-$secondary-color-dark: #333;
+$secondary-color: #66615D; // secondary dark grey at  20%
+$secondary-color-light: #F1EBE6; //  #D7D1CC at %10
+$secondary-color-dark: #332E2A; // secondary dark grey at 40%
 
-$error-color: #FF3A11;
+$error-color: #E62645; // secondary red
 
 //special elements colours
-$footer-background-color: #e5e5e5;
+$footer-background-color: #D7D1CC; // uq neutral
 $menu-background-color: #fff;
-$uq-emerald: hsl(113, 49%, 35%);
+$uq-emerald: #2EA836; // secondary emerald
 
 @mixin flexbox() {
   display: -webkit-box;
