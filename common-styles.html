@@ -232,6 +232,18 @@
         font-weight: bold;
       }
 
+      .button-colored-accent {
+        border: 1px solid var(--accent-color); /* to stop movement on hover */
+      }
+
+      .button-colored-accent:hover {
+        border: 1px solid var(--accent-color);
+      }
+
+      .button-colored-accent.uql-login-button:hover {
+        border: 1px solid var(--text-color-inverse);
+      }
+
       .button-colored-accent.inverse,
       .button-colored-accent.inverse a {
         color: var(--accent-color);
