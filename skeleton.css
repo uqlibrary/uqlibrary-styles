@@ -8,13 +8,13 @@
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
   #preloader .preloader-card p {
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #66615D; }
   #preloader .preloader-card h2 {
     line-break: auto;
     white-space: normal;
     font-size: 1.8em;
-    color: #999490;
+    color: #757575;
     font-weight: 400;
     line-height: 1.1em; }
   #preloader #preloader-loading {
@@ -45,7 +45,7 @@ uq-minimal-footer {
 uql-connect-footer {
   display: block;
   width: 100%;
-  background-color: #D7D1CC;
+  background-color: #e5e5e5;
   min-height: 240px; }
 
 @media all and (max-width: 1047px) {
