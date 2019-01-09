@@ -32,11 +32,16 @@ git rm -rf bin
 bower cache clean $REPO # ensure we're getting the latest from the desired branch.
 bower install
 
+# Move one level up to include bower dependencies
+mv .git ../
+mv README.md ../index.md
+cd ../
+
 # Send it all to github
 git add -A .
 git commit -am 'seed gh-pages'
 git push -u origin gh-pages --force
 
-cd "../..";
+cd "..";
 echo `pwd`;
 rm -rf tmp;

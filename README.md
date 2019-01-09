@@ -1,6 +1,6 @@
 # uqlibrary-styles
 
-View full demo [here](http://uqlibrary.github.io/uqlibrary-styles/style-guide/demo).
+View full demo [here](http://uqlibrary.github.io/uqlibrary-styles/uqlibrary-styles/style-guide/demo).
 The demo GitHub pages should be updated after every commit to `master` branch by running the `generate-gh-pages.sh` script in the `/bin/` directory
 
 ## Getting Started
