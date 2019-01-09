@@ -1,7 +1,8 @@
 {
   "name": "uqlibrary-styles",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Style guide for UQ Library web sites and web applications",
+  "main": "common-styles.html",
   "authors": [
     "UQ Library development team"
   ],
@@ -19,12 +20,8 @@
     "iron-elements": "PolymerElements/iron-elements#^1.0.3",
     "paper-elements": "PolymerElements/paper-elements#^1.0.1",
     "platinum-elements": "PolymerElements/platinum-elements#^1.1.0",
-    "polymer": "Polymer/polymer#^1.0.0",
+    "polymer": "Polymer/polymer#^1.9.3",
     "webcomponentsjs": "^0.7.12",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#~1.0.2"
-  },
-  "devDependencies": {
-    "web-component-tester": "*"
-  },
-  "main": "common-styles.html"
+  }
 }
