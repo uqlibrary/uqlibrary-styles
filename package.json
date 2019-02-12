@@ -1,6 +1,6 @@
 {
   "name": "uqlibrary-styles",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Web component to display styles",
   "license": "MIT",
   "main": "common-styles.html",
@@ -18,7 +18,7 @@
   },
   "engines": {
     "npm": "^6.5.0",
-    "node": "^11.6.0"
+    "node": "^11.8.0"
   },
   "engine-strict": true
 }
