@@ -2,10 +2,9 @@
   <template>
     <style is="custom-style">
       .loading {
-        moz-transition: opacity ease-in 0.2s;
+        -moz-transition: opacity ease-in 0.2s;
         -o-transition: opacity ease-in 0.2s;
         -webkit-transition: opacity ease-in 0.2s;
-        -webkit-transition-delay: 0.2s;
         transition: opacity ease-in 0.2s;
       }
 
@@ -351,7 +350,7 @@
 
       paper-item iron-icon {
         padding-right: 6px;
-        color: #999490;  !important; /* secondary dark grey */
+        color: #999490 !important; /* secondary dark grey */
       }
 
       paper-progress {
@@ -385,7 +384,7 @@
       }
 
       .uqlibrary-app-footer.right {
-        @apply(--layout-horizontal-reverse);
+        @apply --layout-horizontal-reverse;
       }
 
       paper-toolbar .app-title {
@@ -411,7 +410,7 @@
 
       /* styling for hours, computers, training */
       paper-item .linked-item {
-        @apply(--layout-flex-2);
+        @apply --layout-flex-2;
         color: var(--accent-color);
         cursor: pointer;
       }
@@ -449,7 +448,7 @@
 
       @media all and (max-width: 260px) {
         paper-item.compact.detail-item {
-          @apply(--layout-vertical);
+          @apply --layout-vertical;
           min-height: 50px;
           line-height: 1em;
           margin: 6px 0;
